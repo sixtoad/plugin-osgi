@@ -11,29 +11,35 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.jboss.forge</groupId>
-            <artifactId>forge-shell-api</artifactId>
-            <version>1.0.0.Beta5</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.forge</groupId>
-            <artifactId>forge-maven-api</artifactId>
-            <version>1.0.0.Beta5</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.forge</groupId>
-            <artifactId>forge-javaee-api</artifactId>
-            <version>1.0.0.Beta5</version>
-            <scope>provided</scope>
-        </dependency>
+      <groupId>org.jboss.forge</groupId>
+      <artifactId>forge-shell-api</artifactId>
+      <version>1.0.0.Beta5</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.forge</groupId>
+      <artifactId>forge-maven-api</artifactId>
+      <version>1.0.0.Beta5</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.forge</groupId>
+      <artifactId>forge-javaee-api</artifactId>
+      <version>1.0.0.Beta5</version>
+      <scope>provided</scope>
+    </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>JBOSS_NEXUS</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
     <build>
         <finalName>plugin-osgi</finalName>
         <plugins>
